@@ -1,8 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PROYECTO MI PERFIL
 
-## Getting Started
+###### HECHO POR CARLOS ANDRÉS PUELLO BOLAÑO
 
-First, run the development server:
+> La fuerza no viene de una capacidad física. Viene de una voluntad indomable. - Gandhi
+
+## Inicio
+
+Antes que nada, debes tener en cuenta que debes installar el siguiente comando para instalar node_modules de manera local es decir, se pueda instalar todos los paquetes.
+
+npm install
+
+## Iniciar el servidor de manera local
+
+Debes arrancar el servidor local con algunos de los comandos
 
 ```bash
 npm run dev
@@ -14,23 +24,57 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Paquetes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Estos son los paquetes que están instalados(debes comprobar en el package.json si estan instalados de lo contrario, se indicarán):
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Iconify
 
-## Learn More
+            Se instala paquetes como iconify donde se muestran los iconos este es el comando se usa para mostrar iconos como por ejemplo redes sociales:
 
-To learn more about Next.js, take a look at the following resources:
+            npm install --save-dev @iconify/react
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- React toastify
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+            Se instala este paquete para agregar una pequeña alerta a una notificación del usuario al validarlo si están en blanco los campos o ya está completo el usuario.
 
-## Deploy on Vercel
+            npm install --save react-toastify
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Animate.css
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+        Es una libreria de Javascript para uso de animaciones se instala este paquete con ese objetivo para agregar unas en landing page.
+
+        npm install animate.css --save
+
+- AOS(Animate On Scroll Library)
+
+        Libreria de Animaciones cuando se haga scroll se instala este paquete para que en el landing page se agrega unas clases y se pueda hacer la respectiva animación tanto en intereses y contacto.
+
+        npm i --save-dev @types/aos
+
+## Componentes de React usados
+
+Por defecto se hace todo desde el page.tsx que es index ( página principal), Los Componentes usados en este proyecto son(están clasificados con sus carpetas y hoja de estilos en .module.css):
+
+1.  about
+
+                      - About.tsx
+                      - SocialMedia.tsx
+                      - About.module.css
+
+2.  header
+
+                        - Header.tsx
+                        - Header.module.css
+
+3.  interests
+
+                        - Interests.tsx
+                        - Interests.module.css
+
+4.  contact
+
+                        - Contact.tsx
+                        - About.module.css
+
+P.D Muchas Gracias por la oportunidad y que el todopoderoso siempre los bendiga soy abierto al aprendizaje continuo
